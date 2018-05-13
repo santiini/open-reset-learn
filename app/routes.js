@@ -17,6 +17,9 @@ module.exports = (r) => {
   /** 用户查看自身信息接口 */
   r.get('/session', 'user#session');
 
+  /* test1: 普通的返回值 */
+  r.get('/test1', 'home#test1');
+
   /** 用户接口 */
   r.resource('user');
 };

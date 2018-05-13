@@ -29,4 +29,11 @@ const index = (req, res, next) => {
   next();
 };
 
-module.exports = { index };
+/* test1: 返回文字 */
+const test1 = (req, res, next) => {
+  console.log(test);
+  res.send('just text');
+  next();
+};
+
+module.exports = { index, test1 };

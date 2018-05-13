@@ -13,7 +13,7 @@ U.cached.init(cache.port, cache.host, cache.opts);
 if (U.isProd) U.rest.utils.logger = U.logger = U.bunyan.createLogger(config.logger);
 
 U.rest
-//  .plugin(U.openRestWithMysql)
+ .plugin(U.openRestWithMysql)
  .plugin(getter, assert, rest, params)
  .plugin(() => {
    U.model = U.rest.utils.model;
